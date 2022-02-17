@@ -5,7 +5,7 @@ import Search from "./Component/Search";
 function App() {
 	return (
 		<div className="App">
-			<h1> UEFA CHAMPIONS LEAGUE </h1>
+			<h1> Movie App </h1>
 
 			<Navbar />
 			<Search />

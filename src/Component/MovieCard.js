@@ -9,12 +9,12 @@ const UefaCard = ({ UefaData }) => {
 					variant="top"
 					width="120px"
 					height="220px"
-					src={UefaData.foto}
+					src={UefaData.posterUrl}
 				/>
 				<Card.Body>
-					<Card.Title> {UefaData.tittle}</Card.Title>
-					<Card.Text>{UefaData.URL}</Card.Text>
-					<Card.Text>{UefaData.rate}</Card.Text>
+					<Card.Title> {UefaData.title}</Card.Title>
+					<Card.Text>{UefaData.posterUrl}</Card.Text>
+					<Card.Text>{UefaData.rating}</Card.Text>
 					<Card.Text>{UefaData.description}</Card.Text>
 				</Card.Body>
 			</Card>

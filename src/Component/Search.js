@@ -9,7 +9,7 @@ const Search = () => {
 		<div>
 			<input
 				type="search"
-				placeholder="search Club"
+				placeholder="Search Film "
 				// onChange={(e)=>setSearchField(e.target.value)}
 				onChange={handleChange}
 			/>
