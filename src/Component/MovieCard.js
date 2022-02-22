@@ -1,7 +1,9 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const UefaCard = ({ UefaData }) => {
+	const navigate = useNavigate();
 	return (
 		<div>
 			<Card style={{ width: "18rem" }}>
@@ -13,9 +15,16 @@ const UefaCard = ({ UefaData }) => {
 				/>
 				<Card.Body>
 					<Card.Title> {UefaData.title}</Card.Title>
-					<Card.Text>{UefaData.posterUrl}</Card.Text>
+
 					<Card.Text>{UefaData.rating}</Card.Text>
-					<Card.Text>{UefaData.description}</Card.Text>
+
+					<Button
+						onClick={() =>
+							navigate(`/list/description/${UefaData.id}`)
+						}
+					>
+						About
+					</Button>
 				</Card.Body>
 			</Card>
 		</div>

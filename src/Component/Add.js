@@ -9,13 +9,13 @@ const Add = ({ addNew }) => {
 	const handleShow = () => setShow(true);
 	const handleAdd = () => {
 		handleClose();
-		addNew({ title, description, rating, posterUrl });
+		addNew({ title, description, rating, posterUrl , trailer});
 	};
 	const [title, setTittle] = useState("");
 	const [description, setDescription] = useState("");
 	const [rating, setRate] = useState(0);
 	const [posterUrl, setFoto] = useState("");
-	// const [URL, setURL] = useState("");
+	const [trailer, setTrailer] = useState("");
 	return (
 		<div>
 			<>
@@ -49,6 +49,12 @@ const Add = ({ addNew }) => {
 							type="text"
 							onChange={(e) => setRate(e.target.value)}
 						/>
+							<label> trailer : </label>
+						<input
+							type="text"
+							onChange={(e) => setTrailer(e.target.value)}
+						/>
+					
 					
 					</Modal.Body>
 					<Modal.Footer>
